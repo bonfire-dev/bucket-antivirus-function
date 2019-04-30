@@ -21,7 +21,7 @@ all: archive
 
 clean:
 	rm -rf compile/lambda.zip
-	docker rm src
+	-docker rm src
 
 archive: clean
 ifeq ($(circleci), true)
